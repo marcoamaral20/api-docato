@@ -1,0 +1,32 @@
+{
+  "name": "docato",
+  "version": "1.0.0",
+  "description": "Teste de dev empresa Docato",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoamaral20/TesteDocato.git"
+  },
+  "author": "Marco Amaral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoamaral20/TesteDocato/issues"
+  },
+  "homepage": "https://github.com/marcoamaral20/TesteDocato#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
