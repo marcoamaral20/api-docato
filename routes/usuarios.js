@@ -100,7 +100,7 @@ router.get('/:id_usuario',(req, res, next) => {
 
                 if ( response.length == 0) {
                     return res.status(404).send({
-                        mensagem: "Não foi encontrando produto com este ID"
+                        mensagem: "Não foi encontrando usuário com este ID"
                     })
                 }
                 return res.status(200).send({response })
@@ -127,7 +127,7 @@ router.patch('/', (req, res, next) => {
             (error, resultado, field) => {
                 conn.release();
                 if (error) { return res.status(500).send({ error: error}) }
-                res.status(202).send({mensagem: 'Produto atualizado com sucesso'});
+                res.status(202).send({mensagem: 'Usuário atualizado com sucesso'});
             }
         )
     });    
@@ -144,7 +144,7 @@ router.delete('/', (req, res, next) => {
             (error, resultado, field) => {
                 conn.release();
                 if (error) { return res.status(500).send({ error: error}) }
-                return res.status(202).send({mensagem: 'Usuario removido com sucesso'});
+                return res.status(202).send({mensagem: 'Usuário removido com sucesso'});
             }
         )
     })
